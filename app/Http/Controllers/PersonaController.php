@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Persona;
+use App\Models\Interes;
 use Illuminate\Http\Request;
 
 class PersonaController extends Controller
@@ -17,7 +18,7 @@ class PersonaController extends Controller
 
     /**
      * Show the form for creating a new resource.
-     */
+     */ 
     public function create()
     {
         $intereses = Interes::all();
